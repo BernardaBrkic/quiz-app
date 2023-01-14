@@ -1,13 +1,44 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
+@import url("https://fonts.googleapis.com/css2?family=Raleway&display=swap");
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+body {
+  font-family: "Raleway", sans-serif;
+  margin: 0;
+  background-image: url("../src/assets/background2.svg");
+  background-size: cover;
+  text-align: center;
+}
+button {
+  cursor: pointer;
+  padding: 0.5rem 1rem;
+  border-radius: 2rem;
+  border: 0;
+  color: #efefef;
+  margin-top: 1rem;
+  transition: 0.2s;
+}
+button:active {
+  transform: scale(0.95);
+}
+.content {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+.chosen-answer {
+  background-color: #efefef;
+  border-radius: 2rem;
+  padding: 0.5rem 1rem;
+  color: #000;
+}
+.incorrect {
+  background-color: #ff2e2e;
+  padding: 0.5rem 1rem;
+  border-radius: 2rem;
+}
+.correct {
+  background-color: #53bf9d;
+  padding: 0.5rem 1rem;
+  border-radius: 2rem;
 }

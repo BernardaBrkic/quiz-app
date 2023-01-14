@@ -1,0 +1,20 @@
+.wrapper {
+  width: 100%;
+  max-width: 46%;
+  background-color: #f94c66;
+  box-shadow: #00000040 0px 54px 55px, #0000001f 0px -12px 30px,
+    #0000001f 0px 4px 6px, #0000002b 0px 12px 13px, #00000017 0px -3px 5px;
+  padding: 2%;
+  color: #fefefe;
+  border-radius: 1rem;
+}
+.wrapper h1 {
+  margin-top: 0;
+}
+
+@media screen and (max-width: 576px) {
+  .wrapper {
+    max-width: 88%;
+    padding: 1rem;
+  }
+}
