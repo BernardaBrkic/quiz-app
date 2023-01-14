@@ -83,7 +83,7 @@ const Quiz = () => {
             </section>
             {wasClicked ? (
               <p className={className}>
-                Vaš konačan odgovor je <b>{chosenAnswer}</b>.
+                Vaš odabrani odgovor je <b>{chosenAnswer}</b>.
               </p>
             ) : (
               ""
