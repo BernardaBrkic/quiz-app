@@ -88,13 +88,9 @@ const Quiz = () => {
             ) : (
               ""
             )}
-            {wasClicked && wasAnswerCorrect ? (
-              <p>Vaš odogovor je točan!</p>
-            ) : (
-              ""
-            )}
+            {wasClicked && wasAnswerCorrect ? <p>Vaš odgovor je točan!</p> : ""}
             {wasClicked && !wasAnswerCorrect ? (
-              <p>Vaš odogovor je netočan!</p>
+              <p>Vaš odgovor je netočan!</p>
             ) : (
               ""
             )}
