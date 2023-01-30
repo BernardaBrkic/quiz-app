@@ -15,8 +15,8 @@ const StartPage = () => {
       <Wrapper>
         <h1>Jeste li spremni testirati svoje znanje?</h1>
         <p>
-          Ovaj kviz ima {questions.length} pitanja. Za svako pitanje imate{" "}
-          <b>samo jedan</b> pokušaj!
+          Ovaj kviz ima <b>{questions.length}</b> pitanja. Za svako pitanje
+          imate <b>samo jedan</b> pokušaj!
         </p>
         <button onClick={startQuizHandler} className={classes.button}>
           Započni s kvizom
