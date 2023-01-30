@@ -48,8 +48,10 @@ const Quiz = () => {
       <Wrapper>
         {showResult ? (
           <div className="score-section">
+            <h2>Kraj!</h2>
             Postigli ste {score} od ukupno {questions.length} bodova!
           </div>
+          
         ) : (
           <>
             <h1>Pitanja</h1>
@@ -61,7 +63,7 @@ const Quiz = () => {
                 od <b>{questions.length}</b>.
               </div>
               <div className={classes["question-text"]}>
-                {questions[currentQuestion].questionText}
+                {currentQuestion + 1}. {questions[currentQuestion].questionText}
               </div>
             </div>
             <section className={classes["answer-section"]}>
