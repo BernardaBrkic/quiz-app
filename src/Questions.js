@@ -9,7 +9,7 @@ export const questions = [
       { answerText: "1953.", isCorrect: false },
       { answerText: "1931.", isCorrect: false },
     ],
-    correctAnswerValue: "1911",
+    correctAnswerValue: "b) 1911",
   },
   {
     id: "q2",
@@ -20,7 +20,7 @@ export const questions = [
       { answerText: "Bonbonierre", isCorrect: false },
       { answerText: "Union", isCorrect: true },
     ],
-    correctAnswerValue: "Union",
+    correctAnswerValue: "d) Union",
   },
   {
     id: "q3",
@@ -31,7 +31,7 @@ export const questions = [
       { answerText: "Fellner i Helmer", isCorrect: false },
       { answerText: "König i Helmer", isCorrect: false },
     ],
-    correctAnswerValue: "König i Deutsch",
+    correctAnswerValue: "a) König i Deutsch",
   },
   {
     id: "q4",
@@ -43,7 +43,7 @@ export const questions = [
       { answerText: "Dvor u Beču i Budimu", isCorrect: true },
       { answerText: "Dvor u Berlinu", isCorrect: false },
     ],
-    correctAnswerValue: "Dvor u Beču i Budimu",
+    correctAnswerValue: "c) Dvor u Beču i Budimu",
   },
   {
     id: "q5",
@@ -54,7 +54,7 @@ export const questions = [
       { answerText: "1925.", isCorrect: false },
       { answerText: "1930.", isCorrect: false },
     ],
-    correctAnswerValue: "1920",
+    correctAnswerValue: "b) 1920",
   },
   {
     id: "q6",
@@ -66,7 +66,7 @@ export const questions = [
       { answerText: "Karolina", isCorrect: true },
       { answerText: "Terezija", isCorrect: false },
     ],
-    correctAnswerValue: "Karolina",
+    correctAnswerValue: "c) Karolina",
   },
   {
     id: "q7",
@@ -78,7 +78,7 @@ export const questions = [
       { answerText: "Grigor Vitez", isCorrect: false },
       { answerText: "Miro Gavran", isCorrect: false },
     ],
-    correctAnswerValue: "Ratko Zvrko",
+    correctAnswerValue: "a) Ratko Zvrko",
   },
   {
     id: "q8",
@@ -90,7 +90,7 @@ export const questions = [
       { answerText: "1935.", isCorrect: false },
       { answerText: "1936.", isCorrect: true },
     ],
-    correctAnswerValue: "1936",
+    correctAnswerValue: "d) 1936",
   },
   {
     id: "q9",
@@ -102,7 +102,7 @@ export const questions = [
       { answerText: "Čoksa", isCorrect: false },
       { answerText: "Bananko", isCorrect: false },
     ],
-    correctAnswerValue: "Životinjsko carstvo",
+    correctAnswerValue: "b) Životinjsko carstvo",
   },
   {
     id: "q10",
@@ -114,7 +114,7 @@ export const questions = [
       { answerText: "Fontana", isCorrect: false },
       { answerText: "Dorina Praline", isCorrect: false },
     ],
-    correctAnswerValue: "Bajadera",
+    correctAnswerValue: "a) Bajadera",
   },
   {
     id: "q11",
@@ -126,7 +126,7 @@ export const questions = [
       { answerText: "Programerka", isCorrect: false },
       { answerText: "Umjetnica", isCorrect: false },
     ],
-    correctAnswerValue: "Domaćica",
+    correctAnswerValue: "b) Domaćica",
   },
   {
     id: "q12",
@@ -137,7 +137,7 @@ export const questions = [
       { answerText: "Kraš Diesel", isCorrect: false },
       { answerText: "Kraš Express", isCorrect: true },
     ],
-    correctAnswerValue: "Kraš Express",
+    correctAnswerValue: "d) Kraš Express",
   },
   {
     id: "q13",
@@ -148,7 +148,7 @@ export const questions = [
       { answerText: "505", isCorrect: true },
       { answerText: "Domaćica", isCorrect: false },
     ],
-    correctAnswerValue: "505",
+    correctAnswerValue: "c) 505",
   },
   {
     id: "q14",
@@ -159,7 +159,7 @@ export const questions = [
       { answerText: "Lakše se diše", isCorrect: false },
       { answerText: "Obiteljska miljenica", isCorrect: false },
     ],
-    correctAnswerValue: "Umjetnost zavođenja",
+    correctAnswerValue: "a) Umjetnost zavođenja",
   },
   {
     id: "q15",
@@ -170,6 +170,6 @@ export const questions = [
       { answerText: "Bilo kuda Kraš svuda", isCorrect: false },
       { answerText: "Kraš, uvijek u vašem domu", isCorrect: false },
     ],
-    correctAnswerValue: "Okus koji spaja generacije ",
+    correctAnswerValue: "b) Okus koji spaja generacije ",
   },
 ];
