@@ -5,7 +5,7 @@ import { questions } from "../Questions";
 import Wrapper from "./Wrapper";
 
 const Quiz = () => {
-  const [currentQuestion, setCurrentQuestion] = useState(0);
+  const [questionIndex, setQuestionIndex] = useState(0);
   const [score, setScore] = useState(0);
   const [showResult, setShowResult] = useState(false);
   const [isDisabled, setIsDisabled] = useState(false);
@@ -31,9 +31,9 @@ const Quiz = () => {
     setIsDisabled(false);
     setWasClicked(false);
     setWasAnswerCorrect(null);
-    const nextQuestion = currentQuestion + 1;
+    const nextQuestion = questionIndex + 1;
     if (nextQuestion < questions.length) {
-      setCurrentQuestion(nextQuestion);
+      setQuestionIndex(nextQuestion);
     } else {
       setShowResult(true);
     }
@@ -51,23 +51,22 @@ const Quiz = () => {
             <h2>Kraj!</h2>
             Postigli ste {score} od ukupno {questions.length} bodova!
           </div>
-          
         ) : (
-          <>
+          <div>
             <h1>Pitanja</h1>
             <div className={classes["question-section"]}>
               <div className={classes["question-count"]}>
                 <span>
-                  Pitanje broj <b>{currentQuestion + 1}</b>
+                  Pitanje broj <b>{questionIndex + 1}</b>
                 </span>{" "}
                 od <b>{questions.length}</b>.
               </div>
               <div className={classes["question-text"]}>
-                {currentQuestion + 1}. {questions[currentQuestion].questionText}
+                {questionIndex + 1}. {questions[questionIndex].questionText}
               </div>
             </div>
             <section className={classes["answer-section"]}>
-              {questions[currentQuestion].answerOptions.map((item, i) => (
+              {questions[questionIndex].answerOptions.map((item, i) => (
                 <button
                   key={i}
                   className={wasClicked ? "answer" : "answer-clicked"}
@@ -83,16 +82,18 @@ const Quiz = () => {
                 </button>
               ))}
             </section>
-            {wasClicked ? (
+            {wasClicked && wasAnswerCorrect ? (
               <p className={className}>
-                Vaš odabrani odgovor je <b>{chosenAnswer}</b>.
+                Vaš odabrani odgovor <b>{chosenAnswer}</b> je točan!
               </p>
             ) : (
               ""
             )}
-            {wasClicked && wasAnswerCorrect ? <p>Vaš odgovor je točan!</p> : ""}
             {wasClicked && !wasAnswerCorrect ? (
-              <p>Vaš odgovor je netočan!</p>
+              <p className={className}>
+                Vaš odgovor <b>{chosenAnswer}</b> je netočan! Točan odgovor je{" "}
+                <b>{questions[questionIndex].correctAnswerValue}.</b>
+              </p>
             ) : (
               ""
             )}
@@ -102,9 +103,11 @@ const Quiz = () => {
               className={classes.next}
               disabled={!isDisabled}
             >
-              Sljedeće pitanje
+              {questionIndex === questions.length - 1
+                ? "Završi"
+                : "Sljedeće pitanje"}
             </button>
-          </>
+          </div>
         )}
       </Wrapper>
     </React.Fragment>
