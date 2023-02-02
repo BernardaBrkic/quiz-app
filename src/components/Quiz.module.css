@@ -19,9 +19,12 @@
   width: 49%;
   /* box-shadow: inset 1px 1px 8px #ff2e2e; */
 }
-.answer-section > button:focus,
 .answer-section > button:visited {
   background-color: #53bf9d;
+}
+
+.answer-section > button:focus {
+  background-color: #a7b4b0;
 }
 .answer-section .answer {
   background-color: #efefef;
